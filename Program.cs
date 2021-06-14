@@ -111,20 +111,33 @@ namespace CGOL
             static void Main(string[] args)
             {
                 GameOfLife gameOfLife = new GameOfLife(10,10);
-                //GoLTest g = new GoLTest(); //test suite
+                GoLTest g = new GoLTest(); //testing seed
                 Console.SetCursorPosition(0, 0);
                 int runs = 10; //number of generations to run
+                int test = 2;
                 int i = 0;
+                int j = 0;
                 int slowSlim = 150; //slow down simulation so its easier to see
                 while (i < runs)
                 {
-                    //g.DrawTest(); 
-                    //g.growNextTest(); //working on unit test
                     gameOfLife.Draw();
                     gameOfLife.growNext();
                     Thread.Sleep(slowSlim);
                     i++;
                 }
+
+                while (j < test) 
+                {
+                    g.growNextTest(); //working on unit test
+                    j++;
+
+                }
+
+                Console.WriteLine("Rule one test " + g.getOne()); //should be 0
+                Console.WriteLine("Rule two test " + g.getTwo()); //shold be 1
+                Console.WriteLine("Rule three test " + g.getThree()); //should be 0
+                Console.WriteLine("Rule four test " + g.getFour()); //should be 1 although the pattern is correct if a draw the test game
+
             }
         }
     }
