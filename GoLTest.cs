@@ -1,5 +1,4 @@
 using System;
-using System.Threading;
 
 namespace CGOL
 {
@@ -52,9 +51,9 @@ namespace CGOL
                 CurGrid[9,4] = 1;
                 CurGrid[7,4] = 1; //rule 3
 
-                CurGrid[1,8] = 1;
-                CurGrid[1,6] = 1;
-                CurGrid[0,7] = 1; //rule 4
+                CurGrid[3,3] = 1;
+                CurGrid[2,4] = 1;
+                CurGrid[4,4] = 1; //rule 4
 
         }
 
@@ -75,7 +74,7 @@ namespace CGOL
 
         public int getFour() {
 
-            return CurGrid[1,7];
+            return CurGrid[3,4];
         }
 
         public void DrawTest() {
