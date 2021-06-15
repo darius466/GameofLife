@@ -8,4 +8,4 @@ GoL test is seeded with a known pattern to ensure the rules are being executed p
 
 Finalized main program in GOL-Main.
 
-Test Class for suite in GOL-Library.
+Test Class for test suite in GOL-Library.
