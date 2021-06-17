@@ -19,7 +19,7 @@ namespace StringLibraryTest
                 g.growNextTest();
                 i++;
             }
-            Assert.AreEqual(0, g.getOne());
+            Assert.AreEqual(0, g.getOne()); //the value of the cell at this grid coordinate should be 0 after one generation 
         }
 
         [TestMethod]
@@ -33,7 +33,7 @@ namespace StringLibraryTest
                 g.growNextTest();
                 i++;
             }
-            Assert.AreEqual(1, g.getTwo());
+            Assert.AreEqual(1, g.getTwo()); //the value of the cell at this grid coordinate should be 1 after one generation 
         }
 
         [TestMethod]
@@ -47,7 +47,7 @@ namespace StringLibraryTest
                 g.growNextTest();
                 i++;
             }
-            Assert.AreEqual(0, g.getThree());
+            Assert.AreEqual(0, g.getThree()); //the value of the cell at this grid coordinate should be 0 after one generation 
         }
 
         [TestMethod]
@@ -61,7 +61,7 @@ namespace StringLibraryTest
                 g.growNextTest();
                 i++;
             }
-            Assert.AreEqual(1, g.getFour());
+            Assert.AreEqual(1, g.getFour()); //the value of the cell at this grid coordinate should be 1 after one generation 
         }
 
 
